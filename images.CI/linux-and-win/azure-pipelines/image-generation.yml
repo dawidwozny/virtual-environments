@@ -9,7 +9,8 @@ jobs:
   displayName: Image Generation (${{ parameters.image_type }})
   timeoutInMinutes: 600
   cancelTimeoutInMinutes: 30
-  pool: ubuntu-20.04
+  pool:
+    vmImage: 'ubuntu-20.04'
   variables:
   - group: Image Generation Variables
 
